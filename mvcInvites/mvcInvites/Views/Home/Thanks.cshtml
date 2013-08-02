@@ -1,0 +1,13 @@
+﻿@model mvcInvites.Models.GuestResponse
+
+@{
+    ViewBag.Title = "Thanks";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Thanks</h2>
+@if (Model.WillAttend == true) {
+  @:See you soon! 
+} else {
+    @:Sorry to hear that.
+}
